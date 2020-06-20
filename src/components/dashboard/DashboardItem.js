@@ -34,7 +34,7 @@ class DashboardItem extends Component {
                                         <i className="fa fa-flag-checkered pr-1"> View orders </i>
                                     </li>
                                 </Link>
-                                <Link to={`/updatewallet/${wallet.id}`}>
+                                <Link to={`/updateorder/${wallet.id}`}>
                                     <li className="list-group-item update text-info">
                                         <i className="fa fa-edit pr-1"> Update Order</i>
                                     </li>

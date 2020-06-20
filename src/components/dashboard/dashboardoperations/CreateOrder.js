@@ -3,7 +3,7 @@ import {createWallet} from '../../../actions/projectActions'
 import {connect} from 'react-redux'
 import classnames from 'classnames'
 
-class CreateWallet extends Component {
+class CreateOrder extends Component {
     constructor(props) {
         super(props)
 
@@ -49,7 +49,7 @@ class CreateWallet extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 m-auto">
-                            <h5 className="display-4 text-center">Create Wallet</h5>
+                            <h5 className="display-4 text-center">Create Order</h5>
                             <hr />
                             <form onSubmit={(event)=>this.submitHandler(event)}>
                                 <div className="form-group">
@@ -99,4 +99,4 @@ const mapStateToProps = (state) =>({
     errors:state.errors
 })
 
-export default connect(mapStateToProps,{createWallet})(CreateWallet)
+export default connect(mapStateToProps,{createWallet})(CreateOrder)

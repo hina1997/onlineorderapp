@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import classnames from 'classnames'
 import {getWallet,updateWallet} from '../../../actions/projectActions'
 
-class UpdateWallet extends Component {
+class UpdateOrder extends Component {
     constructor(props) {
         super(props)
 
@@ -119,4 +119,4 @@ const mapStateToProps = (state) =>({
     wallet:state.wallet.wallet
 })
 
-export default connect(mapStateToProps,{getWallet,updateWallet})(UpdateWallet)
+export default connect(mapStateToProps,{getWallet,updateWallet})(UpdateOrder)

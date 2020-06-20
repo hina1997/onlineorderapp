@@ -36,14 +36,14 @@ class Dashboard extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1 className="display-4 text-center">Online Cothing Application</h1>
+                            <h1 className="display-4 text-center">Online Clothing Application</h1>
                             <br />
                             <div className="btn-group" style={{ backgroundColor: '#A9CCE3' }}>
                                 <button type="button" className="btn btn-info btn-lg dropdown-toggle" style={{ backgroundColor: '#A9CCE3' }} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Create new
                         </button>
                                 <div className="dropdown-menu">
-                                    <Link className="dropdown-item" to="/createwallet">Order</Link>
+                                    <Link className="dropdown-item" to="/createorder">Order</Link>
                                    
                                 </div>
                             </div>

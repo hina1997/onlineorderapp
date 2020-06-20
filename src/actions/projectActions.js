@@ -32,7 +32,7 @@ export const getWallet = (id) => async dispath => {
 }
 
 export const deleteWallet = (id) => async dispath => {
-    await axios.delete(`http://localhost:8080/wallet/${id}`)
+    await axios.delete(`/wallet/${id}`)
         .then((res) => {
             dispath({type:DELETE_WALLET,payload:id})
         })
@@ -42,7 +42,7 @@ export const deleteWallet = (id) => async dispath => {
 //Transactions
 
 export const createTransaction = (newTransaction, history,walletid) => async dispath => {
-    await axios.post(`http://localhost:8080/transaction/${walletid}`, newTransaction)
+    await axios.post(`/transaction/${walletid}`, newTransaction)
         .then((res) => {
             history.push(`/transactions/${walletid}`)
         }).catch((err) => {
